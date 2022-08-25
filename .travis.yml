@@ -1,0 +1,16 @@
+env:
+  global:
+    - NODE_OPTIONS=--max-old-space-size=8192
+
+matrix:
+  include:
+  - language: node_js
+    env: LANE='node'
+    node_js: 12
+    cache: yarn
+    script:
+      - yarn lint
+      - yarn test
+
+notifications:
+  email: false

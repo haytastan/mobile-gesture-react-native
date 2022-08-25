@@ -1,0 +1,171 @@
+{
+  "name": "CoopCycle",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint src/",
+    "postinstall": "npx jetify"
+  },
+  "dependencies": {
+    "@mapbox/polyline": "^1.1.0",
+    "@mauron85/react-native-background-geolocation": "^0.6.3",
+    "@react-native-community/async-storage": "^1.8.1",
+    "@react-native-community/datetimepicker": "^2.4.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "^5.9.0",
+    "@react-native-community/push-notification-ios": "^1.2.0",
+    "@terrylinla/react-native-sketch-canvas": "^0.8.0",
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.19.0",
+    "buffer": "^5.6.0",
+    "currency-symbol-map": "^4.0.4",
+    "diacritics": "^1.3.0",
+    "esc-pos-encoder": "^1.2.0",
+    "formik": "^2.0.6",
+    "fuse.js": "^3.4.6",
+    "google-libphonenumber": "^3.2.9",
+    "i18next": "^17.0.16",
+    "libphonenumber-js": "^1.7.51",
+    "lodash": "^4.17.15",
+    "moment": "^2.26.0",
+    "moment-business-days": "^1.2.0",
+    "moment-range": "^4.0.2",
+    "native-base": "^2.13.12",
+    "numbro": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "react": "16.9.0",
+    "react-i18next": "^10.13.1",
+    "react-native": "0.61.5",
+    "react-native-autocomplete-input": "^4.1.0",
+    "react-native-ble-manager": "^7.2.0",
+    "react-native-calendars": "^1.265.0",
+    "react-native-camera": "^3.26.0",
+    "react-native-communications": "^2.2.1",
+    "react-native-credit-card-input": "^0.4.1",
+    "react-native-dropdownalert": "^4.2.0",
+    "react-native-email-link": "^1.9.1",
+    "react-native-firebase": "^5.6.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-google-places-autocomplete": "^1.7.1",
+    "react-native-keep-awake": "^4.0.0",
+    "react-native-keyboard-manager": "^4.0.13-16",
+    "react-native-loading-spinner-overlay": "^1.0.1",
+    "react-native-localize": "^1.4.0",
+    "react-native-map-link": "^2.7.9",
+    "react-native-maps": "^0.27.1",
+    "react-native-maps-super-cluster": "^1.6.0",
+    "react-native-modal": "^11.5.6",
+    "react-native-modal-datetime-picker": "^8.7.0",
+    "react-native-modal-selector": "^1.1.5",
+    "react-native-pin-screen": "git+https://git@github.com/coopcycle/react-native-pin-screen.git#1.0.3",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-safe-area-context": "^1.0.2",
+    "react-native-screens": "^2.8.0",
+    "react-native-sound": "^0.11.0",
+    "react-native-swipe-list-view": "^2.5.0",
+    "react-native-version-number": "^0.3.6",
+    "react-navigation": "^4.3.9",
+    "react-navigation-collapsible": "^3.0.3",
+    "react-navigation-drawer": "^2.4.13",
+    "react-navigation-header-buttons": "^3.0.5",
+    "react-navigation-stack": "^2.5.1",
+    "react-navigation-tabs": "^2.8.13",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-async-queue": "^1.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "rn-fetch-blob": "^0.12.0",
+    "slugify": "^1.4.0",
+    "tipsi-stripe": "^7.5.3",
+    "validate.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@react-native-community/eslint-plugin": "^1.1.0",
+    "axios-mock-adapter": "^1.18.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "detox": "^16.5.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.0.0",
+    "jest": "^26.0.1",
+    "jetifier": "^1.6.4",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "mock-async-storage": "^2.2.0",
+    "promise.allsettled": "^1.0.2",
+    "react-dom": "16.9.0",
+    "react-test-renderer": "16.9.0",
+    "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/e2e/"
+    ],
+    "preset": "react-native",
+    "setupFiles": [
+      "./jestSetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)"
+    ]
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/CoopCycle.app",
+        "build": "xcodebuild -workspace ios/CoopCycle.xcworkspace -scheme CoopCycle -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -quiet",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/CoopCycle.app",
+        "build": "xcodebuild ONLY_ACTIVE_ARCH=YES -arch x86_64 -workspace ios/CoopCycle.xcworkspace -scheme CoopCycle -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      },
+      "android.emu.debug": {
+        "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+        "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug --warning-mode all --stacktrace && cd ..",
+        "type": "android.emulator",
+        "device": {
+          "avdName": "test"
+        }
+      },
+      "android.emu.release": {
+        "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+        "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release -DuseDebugCertificate=yes -DminifyEnabled=no --warning-mode all --stacktrace && cd ..",
+        "type": "android.emulator",
+        "device": {
+          "avdName": "test"
+        }
+      },
+      "android.att.release": {
+        "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+        "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release -DuseDebugCertificate=yes -DminifyEnabled=no --warning-mode all --stacktrace && cd ..",
+        "type": "android.attached"
+      }
+    },
+    "test-runner": "jest"
+  }
+}
